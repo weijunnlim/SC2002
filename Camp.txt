@@ -1,0 +1,73 @@
+package CAM;
+import java.time.LocalDate;
+
+public class Camp {
+ private String campName;
+ private LocalDate date;
+ private LocalDate regClosingDate;
+ private Faculty userGroup; //own school or whole of NTU
+ private String location;
+ private int totalSlots;
+ private int committeeSlots; //max 10
+ //description?
+ private Staff staffInCharge;
+ 
+ public Camp(String campName, LocalDate date, LocalDate regClosingDate, Faculty userGroup, String location, int totalSlots, int committeeSlots, Staff staffInCharge) {
+  this.campName = campName;
+  this.date = date;
+  this.regClosingDate = regClosingDate;
+  this.userGroup = userGroup;
+  this.location = location;
+  this.totalSlots = totalSlots;
+  this.committeeSlots = committeeSlots;
+  this.staffInCharge = staffInCharge;
+ }
+ public String getCampName() {
+  return campName;
+ }
+ public void setCampName(String campName) {
+  this.campName = campName;
+ }
+ public LocalDate getDate() {
+  return date;
+ }
+ public void setDate(LocalDate date) {
+  this.date = date;
+ }
+ public LocalDate getRegClosingDate() {
+  return regClosingDate;
+ }
+ public void setRegClosingDate(LocalDate regClosingDate) {
+  this.regClosingDate = regClosingDate;
+ }
+ public Faculty getUserGroup() {
+  return userGroup;
+ }
+ public void setUserGroup(Faculty userGroup) {
+  this.userGroup = userGroup;
+ }
+ public String getLocation() {
+  return location;
+ }
+ public void setLocation(String location) {
+  this.location = location;
+ }
+ public int getTotalSlots() {
+  return totalSlots;
+ }
+ public void setTotalSlots(int totalSlots) {
+  this.totalSlots = totalSlots;
+ }
+ public int getCommitteeSlots() {
+  return committeeSlots;
+ }
+ public void setCommitteeSlots(int committeeSlots) {
+  this.committeeSlots = committeeSlots;
+ }
+ public Staff getStaffInCharge() {
+  return staffInCharge;
+ }
+ public void setStaffInCharge(Staff staffInCharge) {
+  this.staffInCharge = staffInCharge;
+ }
+}
